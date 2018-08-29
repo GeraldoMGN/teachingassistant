@@ -14,3 +14,15 @@ Feature: Self-evaluation
        Given the "alunoX" self-evaluation is not in the system
        When I try to submit my self-evaluation
        Then the system saves the self-evaluation of the "alunoX".
+
+     Scenario: Incomplete self-evaluation
+        Given I am logged in as "alunoY"
+        And I'm on the "Auto-Avaliação" page
+        When I fill two of my goals
+        And I submit the self-evaluation
+        Then I see on the screen an incomplete submission message
+
+     Scenario: Self-evaluation not stored
+        Given that the self-assessment of "alunoY" is not in the system
+        When I try to submit my incomplete self-assessment
+        Then the system saves no self-evaluation
