@@ -29,7 +29,7 @@ Feature: Self-evaluation
         And TODO
 
      Scenario: Discrepant self-evaluation
-        Given the Professor's evaluation of "alunoW" is in the system with the the values: "MPA", "MPA", "MPA"
-        When "alunoW" submits his self-evaluation as "MA", "MA", "MPA"
+        Given the Professor's evaluation of "alunoW" is in the system with the the values: "MPA", "MPA", "MPA", "MPA"
+        When "alunoW" submits his self-evaluation as "MA", "MA", "MPA", "MPA"
         And PLACEHOLDER
         Then the system saves the self-evaluation as discrepant
