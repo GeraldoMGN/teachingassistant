@@ -27,3 +27,8 @@ Feature: Self-evaluation
         When I try to submit my incomplete self-assessment
         Then the system saves no self-evaluation
         And TODO
+
+     Scenario: Discrepant self-evaluation
+        Given the Professor's evaluation of "alunoW" is in the system with the the values: "MPA", "MPA", "MPA"
+        When "alunoW" submits his self-evaluation as "MA", "MA", "MPA"
+        Then the system saves the self-evaluation as discrepant
