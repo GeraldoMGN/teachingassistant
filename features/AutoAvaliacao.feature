@@ -26,3 +26,4 @@ Feature: Self-evaluation
         Given that the self-assessment of "alunoY" is not in the system
         When I try to submit my incomplete self-assessment
         Then the system saves no self-evaluation
+        And TODO
