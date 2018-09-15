@@ -19,12 +19,13 @@ Feature: Self-evaluation
         Given I am logged in as "alunoY"
         And I'm on the "Auto-Avaliação" page
         When I fill two of my goals
+        (TEST)
         And I submit the self-evaluation
         Then I see on the screen an incomplete submission message
 
      Scenario: Self-evaluation not stored
         Given that the self-assessment of "alunoY" is not in the system
-        When I try to submit my incomplete self-assessment
+        When I try to submit my incomplete self-assessment(TEST)
         Then the system saves no self-evaluation
         And TODO
 
