@@ -28,7 +28,7 @@ Feature: Self-evaluation
         Then the system saves no self-evaluation
         And TODO
 
-     Scenario: Discrepant self-evaluation
+     Scenario: Discrepant self-evaluationasd
         Given the Professor's evaluation of "alunoW" is in the system with the the values: "MPA", "MPA", "MPA", "MPA"
         When "alunoW" submits his self-evaluation as "MA", "MA", "MPA", "MPA"
         And PLACEHOLDER
