@@ -3,6 +3,8 @@ Feature: Self-evaluation
      I want to assign a concept to each goal
      so that have a personal evaluation of my performance.
 
+     (TEST)
+
      Scenario: submit my self-evaluation
        Given I am logged in as "alunoX"
        And I am on the "Auto-Avaliação"
