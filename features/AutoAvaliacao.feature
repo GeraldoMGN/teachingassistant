@@ -22,7 +22,7 @@ Feature: Self-evaluation
         And I submit the self-evaluation
         Then I see on the screen(TEST) an incomplete submission message
 
-     Scenario: Self-evaluation not stored
+     Scenario: Self-evaluation not storedasd
         Given that the self-assessment of "alunoY" is not in the system
         When I try to submit my incomplete self-assessment(TEST)
         Then the system saves no self-evaluation
