@@ -3,8 +3,6 @@ Feature: Self-evaluation
      I want to assign a concept to each goal
      so that have a personal evaluation of my performance.
 
-     (TEST)
-
      Scenario: submit my self-evaluation
        Given I am logged in as "alunoX"
        And I am on the "Auto-Avaliação"
@@ -21,11 +19,10 @@ Feature: Self-evaluation
         Given I am logged in as "alunoY"
         And I'm on the "Auto-Avaliação" page
         When I fill two of my goals
-        (TEST)
         And I submit the self-evaluation
         Then I see on the screen(TEST) an incomplete submission message
 
-     Scenario: Self-evaluation not stored
+     Scenario: Self-evaluation not storedasd
         Given that the self-assessment of "alunoY" is not in the system
         When I try to submit my incomplete self-assessment(TEST)
         Then the system saves no self-evaluation
