@@ -21,7 +21,7 @@ Feature: Self-evaluation
         When I fill two of my goals
         (TEST)
         And I submit the self-evaluation
-        Then I see on the screen an incomplete submission message
+        Then I see on the screen(TEST) an incomplete submission message
 
      Scenario: Self-evaluation not stored
         Given that the self-assessment of "alunoY" is not in the system
@@ -34,3 +34,5 @@ Feature: Self-evaluation
         When "alunoW" submits his self-evaluation as "MA", "MA", "MPA", "MPA"
         And PLACEHOLDER
         Then the system saves the self-evaluation as discrepant
+
+        (TEST)
